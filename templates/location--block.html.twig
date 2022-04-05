@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * For the location block.
+ *
+ * Available variables:
+ * - content:
+ *   - city: The city name.
+ *   - country: The country name.
+ *   - date_time: The date and time for the timezone.
+ */
+#}
+{% if content.country and content.city %}
+  <p>Country: {{ content.country }}</p>
+  <p>City: {{ content.city }}</p>
+  {% if content.date_time %}
+    <p>Date and Time: {{ content.date_time }}</p>
+  {% else %}
+    {{ 'Something went worng!'|t }}
+  {% endif %}
+{% endif %}
+
+

@@ -1,0 +1,4 @@
+services:
+  admin_config_form.date_time_service:
+    class: Drupal\admin_config_form\Service\GetDateTime
+    arguments: []

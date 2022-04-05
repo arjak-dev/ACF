@@ -1,0 +1,8 @@
+admin_config_form.location_block:
+  path: 'admin/config/location_block'
+  defaults:
+    _form: '\Drupal\admin_config_form\Form\AdminLocationForm'
+    _title: 'Location Block Configuration'
+  requirements:
+    _permission: 'administer site configuration'
+
